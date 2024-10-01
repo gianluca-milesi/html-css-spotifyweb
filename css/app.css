@@ -26,3 +26,39 @@ a {
     height: 100vh;
 }
 
+
+/* MEDIA PLAYER */
+.media-player {
+    background-color: rgb(40, 40, 40);
+    color: white;
+    width: 100%;
+    /* position: fixed;
+    bottom: 0;
+    left: 0; */
+}
+
+.navbar-player {
+    padding: 22px 11px;
+}
+
+.player__track {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.track-info {
+    display: flex;
+    gap: 12px;
+}
+
+.save-track {
+    display: flex;
+    gap: 12px;
+}
+
+.track-figure {
+    display: block;
+    width: 42px;
+    height: 42px;
+}
