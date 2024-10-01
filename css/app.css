@@ -44,10 +44,12 @@ main {
 
 aside {
     width: 230px;
+    background-color: rgb(0, 0, 0);
 }
 
 .main-content {
     flex-grow: 1;
+    background-color: rgb(20, 25, 34);
 }
 
 .control-btns {
@@ -83,6 +85,7 @@ aside {
     justify-content: space-between;
     align-items: center;
     padding: 22px 11px;
+    gap: 44px;
 }
 
 /* player track */
@@ -164,4 +167,22 @@ aside {
 /* DEBUG */
 .debug>* {
     border: 1px solid black;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 878px) {
+    
+}
+
+
+@media (max-width: 639px) {
+    .save-track {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .player__track {
+        gap: 26px;
+    }
 }
