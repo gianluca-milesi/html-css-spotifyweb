@@ -18,3 +18,11 @@ a {
     color: currentColor;
     text-decoration: none;
 }
+
+/* LAYOUT */
+.viewport {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
