@@ -19,6 +19,14 @@ a {
     text-decoration: none;
 }
 
+button {
+    display: block;
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+}
+
 /* LAYOUT */
 .viewport {
     display: flex;
@@ -38,9 +46,12 @@ a {
 }
 
 .navbar-player {
+    display: flex;
+    justify-content: space-between;
     padding: 22px 11px;
 }
 
+/* player track */
 .player__track {
     display: flex;
     align-items: center;
@@ -49,6 +60,7 @@ a {
 
 .track-info {
     display: flex;
+    align-items: center;
     gap: 12px;
 }
 
@@ -61,4 +73,45 @@ a {
     display: block;
     width: 42px;
     height: 42px;
+}
+
+/* player bar */
+.control-btns {
+    display: flex;
+    gap: 20px;
+}
+
+button .bx {
+    font-size: 16px;
+}
+
+.btn-play.bx {
+    font-size: 32px;
+}
+
+.control-slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/* UTILITIES */
+.color-gray {
+    color: rgb(135, 135, 135);
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+.fs-11 {
+    font-size: 11px;
+}
+.fs-10 {
+    font-size: 10px;
 }
