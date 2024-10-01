@@ -18,10 +18,11 @@
     <div class="viewport">
 
         <main class="debug">
-
+            <aside class="side-bar"></aside>
+            <div class="main-content"></div>
         </main>
 
-        <div class="media-player debug">
+        <div class="media-player">
             <nav class="navbar-player">
                 <div class="player__track">
                     <div class="track-info">
@@ -32,8 +33,8 @@
                         </section>
                     </div>
                     <div class="control-btns">
-                        <i class='bx bx-heart'></i>
-                        <i class='bx bx-folder'></i>
+                        <button><i class='bx bx-heart'></i></button>
+                        <button><i class='bx bx-folder'></i></button>
                     </div>
                 </div>
 
@@ -47,7 +48,9 @@
                     </div>
                     <div class="control-slider">
                         <p class="fs-10"><strong>0:25</strong></p>
-                        <img class="slider">
+                        <div class="slider slider-player">
+                            <div class="slider__progress"></div>
+                        </div>
                         <p class="fs-10"><strong>4:35</strong></p>
                     </div>
                 </div>
@@ -57,7 +60,9 @@
                         <button><i class='bx bxs-playlist'></i></button>
                         <button><i class='bx bx-desktop'></i></i></button>
                         <button><i class='bx bxs-volume-full'></i></button>
-                        <img src="slider">
+                        <div class="slider slider-volume">
+                            <div class="slider__progress"></div>
+                        </div>
                     </div>
                 </div>
             </nav>
