@@ -144,10 +144,12 @@ header {
 
 
 /* HEADER */
+/* main logo */
 .header__logo {
     padding: 18px 76px 18px 20px;
 }
 
+/* menu */
 .header__menu {
     color: white;
     font-size: 14px;
@@ -175,6 +177,36 @@ header {
     left: 0;
     background-color: rgb(173, 255, 47);
 }
+
+/* playlist */
+.header__playlist {
+    color: white;
+    padding: 6px 20px;
+}
+
+.create-playlist {
+    display: flex;
+    gap: 12px;
+}
+
+.playlis-title {
+    padding: 13px 0;
+}
+
+.bx-plus {
+    font-size: 28px;
+    height: 37px;
+    width: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(163, 163, 163);
+    color: black;
+}
+
+
+
+
 
 
 
