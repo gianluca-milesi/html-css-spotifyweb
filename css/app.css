@@ -150,6 +150,12 @@ header {
     padding: 18px 76px 12px 0;
 }
 
+.logo-small {
+    display: none;
+    width: 28px;
+    height: 28px;
+}
+
 /* menu */
 .header__menu {
     color: white;
@@ -161,9 +167,7 @@ header {
     height: 22px;
 }
 
-.menu__home,
-.menu__search,
-.menu__library {
+.header__menu button {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -179,7 +183,7 @@ header {
     background-color: rgb(173, 255, 47);
 }
 
-/* playlist */
+/* new playlist */
 .header__new-playlist {
     margin-bottom: 6px;
 }
@@ -204,10 +208,11 @@ header {
     color: black;
 }
 
-/* playlist list */
+/* user playlist */
 .header__user-playlist {
     margin-bottom: auto;
 }
+
 .playlist-list li {
     font-size: 14px;
     padding: 10px 0;
@@ -267,11 +272,13 @@ header {
     border: 1px solid black;
 }
 
+.opacity-50 {
+    opacity: 50%;
+}
+
 
 /* MEDIA QUERIES */
-@media (max-width: 878px) {
-    
-}
+@media (max-width: 878px) {}
 
 
 @media (max-width: 639px) {
@@ -285,8 +292,69 @@ header {
     }
 }
 
+/* XS */
 @media (max-width:552px) {
     header {
         width: 50px;
+        padding: 5px 11px;
     }
+
+    /* logo */
+    .header__logo {
+        padding: 0;
+        margin-bottom: 6px;
+    }
+
+    .logo-big {
+        display: none;
+    }
+
+    .logo-small {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* menu */
+    .header__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: auto;
+    }
+
+    .header__menu button strong,
+    .header__menu button span {
+        display: none;
+    }
+
+    .menu__home::before {
+        display: none;
+    }
+
+    .menu__logo {
+        width: 28px;
+        height: 28px;
+    }
+
+    /* playlists */
+    .header__new-playlist,
+    .header__user-playlist {
+        display: none;
+    }
+
+    /* profile */
+    .header__profile p {
+        display: none;
+    }
+
+    .download-app {
+        justify-content: center;
+    }
+
+    hr {
+        display: none;
+    }
+
 }
