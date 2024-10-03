@@ -282,6 +282,7 @@ main section {
 .navbar-main__list {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 22px;
 }
 
@@ -378,11 +379,17 @@ main section {
     /* main */
     .navbar-main__list {
         flex-wrap: wrap;
+        gap: 40px 0;
+        text-align: center;
+    }
+
+    .navbar-main__list li {
+        width: calc(100%/5);
+
     }
 
     .navbar-main__list li:last-child{
         width: 100%;
-        text-align: center;
     }
 
     .cards-list {
