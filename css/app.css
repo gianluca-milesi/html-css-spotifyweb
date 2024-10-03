@@ -258,7 +258,7 @@ header {
 
 .btn-upgrade {
     color: white;
-    padding: 15px 40px;
+    padding: 12px 40px;
     border: 1px solid white;
     border-radius: 999px;
     font-size: 12px;
@@ -304,7 +304,11 @@ header {
 
 .cards-list {
     display: flex;
-    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.card {
+    width: calc(100%/6);
 }
 
 .card__figure {
@@ -313,9 +317,10 @@ header {
 }
 
 .card__description {
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+
     justify-content: center;
     gap: 8px;
     padding: 20px 0;
