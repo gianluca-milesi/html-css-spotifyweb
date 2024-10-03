@@ -264,6 +264,7 @@ header {
     font-size: 12px;
 }
 
+/* navbar main */
 .navbar-main {
     display: flex;
     justify-content: center;
@@ -291,6 +292,34 @@ header {
     background-color: rgb(173, 255, 47);
 }
 
+/* recently played */
+.recently-played {
+    color: white;
+    padding: 0 20px;
+}
+
+.recently-played h1 {
+    padding: 30px 0;
+}
+
+.cards-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card__figure {
+    width: 177px;
+    height: 177px;
+}
+
+.card__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 20px 0;
+}
 
 
 
@@ -300,6 +329,10 @@ header {
 /* UTILITIES */
 .color-gray {
     color: rgb(135, 135, 135);
+}
+
+.fs-17 {
+    font-size: 17px;
 }
 
 .fs-13 {
