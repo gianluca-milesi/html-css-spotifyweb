@@ -141,8 +141,8 @@ header {
     gap: 26px;
 }
 
-
-/* HEADER */
+/* MAIN */
+/* Header */
 /* main logo */
 .header__logo {
     padding: 18px 76px 12px 0;
@@ -247,6 +247,23 @@ header {
 }
 
 
+/* Upgrade plan */
+.upgrade-plan {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: rgb(8, 11, 18);
+    padding: 20px 4px;
+}
+
+.btn-upgrade {
+    color: white;
+    padding: 15px 40px;
+    border: 1px solid white;
+    border-radius: 999px;
+    font-size: 12px;
+}
+
 
 
 
@@ -295,6 +312,7 @@ header {
         gap: 26px;
         flex-grow: 1;
     }
+
     .save-track {
         flex-direction: column;
         gap: 0;
@@ -327,7 +345,7 @@ header {
 @media (max-width:552px) {
 
     /* MEDIA PLAYER */
-    .player__track{
+    .player__track {
         flex-grow: 0;
         gap: 15px;
     }
