@@ -18,6 +18,8 @@
     <div class="app">
 
         <main>
+
+            <!-- SIDE HEADER -->
             <header>
                 <div class="header__logo">
                     <a href="#"><img class="logo-big" src="./img/logo.svg"></a>
@@ -78,24 +80,30 @@
                 </div>
             </header>
 
+            <!-- MAIN CONTENT -->
             <div class="main-content">
+
                 <div class="upgrade-plan">
                     <button class="btn-upgrade">EFFETTUA L'UPGRADE</button>
                 </div>
 
-                <nav class="navbar-main">
-                    <ul class="navbar-main__list">
-                        <li class="featured"><a href="#"><strong class="fs-13">IN EVIDENZA</strong></a></li>
-                        <li><a href="#"><strong class="fs-13">PODCAST</strong></a></li>
-                        <li><a href="#"><strong class="fs-13">CLASSIFICHE</strong></a></li>
-                        <li><a href="#"><strong class="fs-13">GENERI E MOOD</strong></a></li>
-                        <li><a href="#"><strong class="fs-13">NUOVE USCITE</strong></a></li>
-                        <li><a href="#"><strong class="fs-13">SCOPRI</strong></a></li>
-                    </ul>
-                </nav>
+                <div class="categories">
+                    <nav class="navbar-main">
+                        <ul class="navbar-main__list">
+                            <li class="featured"><a href="#"><strong class="fs-13">IN EVIDENZA</strong></a></li>
+                            <li><a href="#"><strong class="fs-13">PODCAST</strong></a></li>
+                            <li><a href="#"><strong class="fs-13">CLASSIFICHE</strong></a></li>
+                            <li><a href="#"><strong class="fs-13">GENERI E MOOD</strong></a></li>
+                            <li><a href="#"><strong class="fs-13">NUOVE USCITE</strong></a></li>
+                            <li><a href="#"><strong class="fs-13">SCOPRI</strong></a></li>
+                        </ul>
+                    </nav>
+                </div>
 
                 <section class="recently-played">
-                    <h1>Recently played</h1>
+                    <section class="section-title">
+                        <h1>Recently played</h1>
+                    </section>
                     <div class="cards-list">
 
                         <div class="card">
@@ -145,11 +153,30 @@
                 </section>
 
                 <section class="created-for">
-                    
-                </section>
+                    <section class="section-title">
+                        <h1>Creato per John Doe</h1>
+                        <p class="color-gray fs-13">Più ascolti, più accurati saranno i suggerimenti.</p>
+                    </section>
+                    <div class="cards-list">
 
+                        <div class="card">
+                            <img class="card__figure" src="./img/radar.jpeg">
+                            <div class="card__description">
+                                <h2 class="fs-17">Release Radar</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card__figure" src="./img/mixdaily.jpeg">
+                            <div class="card__description">
+                                <h2 class="fs-17">Daily Mix 1</h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
 
+        <!-- MEDIA PLAYER -->
         <aside class="media-player">
             <nav class="navbar-player">
                 <div class="player__track">

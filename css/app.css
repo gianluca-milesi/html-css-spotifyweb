@@ -58,6 +58,11 @@ header {
     background-color: rgb(20, 25, 34);
 }
 
+main section {
+    color: white;
+    padding: 0 20px;
+}
+
 .control-btns {
     display: flex;
     justify-content: center;
@@ -254,6 +259,10 @@ header {
     align-items: center;
     background-color: rgb(8, 11, 18);
     padding: 20px 4px;
+    /* position: absolute;
+    top: 0;
+    right: 0;
+    left: 0; */
 }
 
 .btn-upgrade {
@@ -293,13 +302,11 @@ header {
 }
 
 /* recently played */
-.recently-played {
-    color: white;
-    padding: 0 20px;
-}
-
-.recently-played h1 {
-    padding: 30px 0;
+.section-title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px 0;
 }
 
 .cards-list {
@@ -320,7 +327,6 @@ header {
     text-align: center;
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     gap: 8px;
     padding: 20px 0;
