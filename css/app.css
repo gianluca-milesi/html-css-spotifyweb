@@ -83,9 +83,9 @@ header {
     color: white;
     width: 100%;
     padding: 10px;
-    position: fixed;
+    /* position: fixed;
     bottom: 0;
-    left: 0;
+    left: 0; */
 }
 
 .navbar-player {
@@ -207,22 +207,28 @@ header {
 }
 
 /* user playlist */
-.header__user-playlist {
-    margin-bottom: auto;
-}
-
 .playlist-list li {
     font-size: 14px;
     padding: 10px 0;
 }
 
 /* profile */
+.header__profile {
+    margin-top: auto;
+}
+
 .download-app {
     display: flex;
     align-items: center;
     gap: 8px;
     font-size: 14px;
     padding: 10px 0;
+}
+
+.download-figure {
+    display: block;
+    width: 18px;
+    height: 18px;
 }
 
 .user-profile {
@@ -319,6 +325,27 @@ header {
 
 /* XS */
 @media (max-width:552px) {
+
+    /* MEDIA PLAYER */
+    .player__track{
+        flex-grow: 0;
+        gap: 15px;
+    }
+
+    .track-name {
+        flex-basis: 20px;
+    }
+
+    .player__bar {
+        padding: 0 10px;
+    }
+
+    .slider.slider-volume {
+        width: 85px;
+    }
+
+
+    /* HEADER */
     header {
         width: 50px;
         padding: 5px 11px;
